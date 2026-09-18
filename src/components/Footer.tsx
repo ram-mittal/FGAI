@@ -84,12 +84,12 @@ export function Footer() {
           </div>
         </div>
 
-        <div className="mt-10 pt-6 border-t border-border/60 flex flex-col sm:flex-row items-center justify-between gap-2">
-          <p className="text-xs text-muted-foreground">
+        <div className="mt-10 pt-6 border-t border-border/60 flex flex-col items-center justify-center gap-2">
+          <p className="text-xs text-muted-foreground text-center">
             © {new Date().getFullYear()} {courseData.code} — {courseData.title}.
             All rights reserved.
           </p>
-          <p className="text-xs text-muted-foreground flex items-center gap-1 flex-wrap justify-center sm:justify-end">
+          <p className="text-xs text-muted-foreground flex items-center gap-1 flex-wrap justify-center">
             Built with <Heart className="h-3 w-3 text-red-500 fill-red-500" />{" "}
             for students | Made by{" "}
             <a
