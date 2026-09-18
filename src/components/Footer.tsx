@@ -89,9 +89,27 @@ export function Footer() {
             © {new Date().getFullYear()} {courseData.code} — {courseData.title}.
             All rights reserved.
           </p>
-          <p className="text-xs text-muted-foreground flex items-center gap-1">
+          <p className="text-xs text-muted-foreground flex items-center gap-1 flex-wrap justify-center sm:justify-end">
             Built with <Heart className="h-3 w-3 text-red-500 fill-red-500" />{" "}
-            for students
+            for students | Made by{" "}
+            <a
+              href="https://github.com/ram-mittal"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-medium hover:text-foreground underline underline-offset-2 transition-colors"
+            >
+              Ram Mittal
+            </a>
+            {" "}(
+            <a
+              href="https://www.linkedin.com/in/ram-mittal"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-foreground underline underline-offset-2 transition-colors"
+            >
+              LinkedIn
+            </a>
+            )
           </p>
         </div>
       </div>
