@@ -102,7 +102,7 @@ export function Footer() {
             </a>
             {" "}(
             <a
-              href="https://www.linkedin.com/in/ram-mittal"
+              href="https://www.linkedin.com/in/rammittal"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-foreground underline underline-offset-2 transition-colors"
