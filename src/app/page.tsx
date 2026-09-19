@@ -12,6 +12,7 @@ import {
   Target,
   CheckCircle2,
   LayoutGrid,
+  User,
 } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { buttonVariants } from "@/components/ui/button";
@@ -99,9 +100,20 @@ export default function HomePage() {
               {courseData.title}
             </h1>
 
-            <p className="text-lg sm:text-xl text-muted-foreground leading-relaxed mb-8 max-w-2xl mx-auto">
+            <p className="text-lg sm:text-xl text-muted-foreground leading-relaxed mb-6 max-w-2xl mx-auto">
               {courseData.description}
             </p>
+
+            {/* Instructor Highlight */}
+            <div className="inline-flex items-center gap-3 bg-white/70 dark:bg-white/5 backdrop-blur-sm border border-border/60 rounded-full px-5 py-2.5 mb-8 shadow-sm">
+              <div className="flex h-9 w-9 items-center justify-center rounded-full bg-gradient-to-br from-violet-500 to-indigo-600 text-white shadow-md">
+                <User className="h-4 w-4" />
+              </div>
+              <div className="text-left">
+                <p className="text-xs text-muted-foreground font-medium leading-none mb-0.5">Course Instructor</p>
+                <p className="text-sm font-semibold tracking-tight">Prof. Shraddha Jadhav</p>
+              </div>
+            </div>
 
             <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
               <Link href="/modules" className={buttonVariants({ size: "lg", className: "px-8" })}>
